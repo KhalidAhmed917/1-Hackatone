@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home {
+    width: 90%;
+}
+
+#services {
+    width: 90%;
+}
+
+#working {
+    width: 90%;
+}
+
+#contact {
+    width: 90%;
+}
+
+header {
+    /* width: 140px;
+    height: 68px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 219px;
+    height: 56px;
+    background-image: url(Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav button {
+    width: 231px;
+    height: 68px;
+    border-radius: 14px;
+    border-radius: 14px;
+    border: 1px solid #191A23;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+header .side-btn {
+    display: none;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+
+section .navigation {
+    width: 531px;
+    height: 481px;
+}
+
+.navigation h1 {
+    width: 531px;
+    height: 231px;
+    font-size: 60px;
+}
+
+.navigation p {
+    margin-top: 20px;
+    width: 498px;
+    height: 112px;
+    font-size: 20px;
+}
+
+.navigation button {
+    width: 264px;
+    height: 68px;
+    border-radius: 14px;
+    background-color: #191A23;
+    color: #F3F3F3;
+}
+
+section .illustration {
+    width: 50%;
+    height: 515px;
+    background-image: url(Illustration.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .company-logo-1 {
+    width: 124px;
+    height: 48px;
+    background-image: url(Company\ logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer .company-logo-2 {
+    width: 125px;
+    height: 48px;
+    background-image: url(Company\ logo\ \(1\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer .company-logo-3 {
+    width: 128px;
+    height: 48px;
+    background-image: url(Company\ logo\ \(2\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer .company-logo-4 {
+    width: 145px;
+    height: 48px;
+    background-image: url(Company\ logo\ \(3\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer .company-logo-5 {
+    width: 125px;
+    height: 48px;
+    background-image: url(Company\ logo\ \(4\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer .company-logo-6 {
+    width: 124px;
+    height: 48px;
+    background-image: url(Company\ logo\ \(5\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#services-header {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#services-header h2 {
+    width: 178px;
+    height: 51px;
+    border-radius: 7px;
+    background-color: #B9FF66;
+    font-size: 40px;
+    text-align: center;
+}
+
+#services-header p {
+    width: 580px;
+    height: 46px;
+    font-size: 18px;
+}
+
+#services-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#services-section .right {
+    background-color: #B9FF66;
+}
+
+.right .head .headings .heading-1 {
+    width: 221px;
+    height: 38px;
+    border-radius: 7px;
+    background-color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.right .head .headings .heading-2 {
+    width: 178px;
+    height: 38px;
+    border-radius: 7px;
+    background-color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.right .img {
+    width: 210px;
+    height: 147.62px;
+    background-image: url(Illustration.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.left .head .headings .heading-1 {
+    width: 221px;
+    height: 38px;
+    border-radius: 7px;
+    background-color: #B9FF66;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.left .head .headings .heading-2 {
+    width: 197px;
+    height: 38px;
+    border-radius: 7px;
+    background-color: #B9FF66;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.left .img {
+    width: 210px;
+    height: 147.62px;
+    background-image: url(tokyo-magnifier-web-search-with-elements\ 2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#services-section .box {
+    width: 40%;
+    height: 310px;
+    border-radius: 45px;
+    border: 1px solid #191A23;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box .head {
+    width: 209px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box .link {
+    width: 164px;
+    height: 41px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link p {
+    font-size: 20px;
+}
+
+#working-header {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#working-header h2 {
+    width: 412px;
+    height: 51px;
+    border-radius: 7px;
+    background-color: #B9FF66;
+    font-size: 40px;
+    text-align: center;
+}
+
+#working-header p {
+    width: 292px;
+    height: 46px;
+    font-size: 18px;
+}
+
+#working-section .box-1 {
+    margin: 50px 0;
+    width: 100%;
+    height: 279px;
+    border-radius: 45px;
+    background-color: #B9FF66;
+    border: 1px solid #191A23;
+    box-shadow: 0 5px 0 0 #191A23;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.box-1 .content {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content #label {
+    width: 712px;
+    height: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#label .s-no {
+    width: 75px;
+    height: 77px;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+#label .s-name {
+    width: 70%;
+    height: 38px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.box-1 .line {
+    width: 90%;
+    border-bottom: 1px solid #191A23;
+}
+
+.box-1 .p {
+    width: 90%;
+    /* height: 60px; */
+}
+
+#working-section .box {
+    margin: 50px 0;
+    width: 100%;
+    height: 159px;
+    border-radius: 45px;
+    border: 1px solid #191A23;
+    box-shadow: 0 5px 0 0 #191A23;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box #label {
+    width: 712px;
+    height: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#label .s-no {
+    width: 75px;
+    height: 77px;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+#label .s-name {
+    width: 612px;
+    height: 38px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.box-1 p {
+    width: 1114px;
+    height: 60px;
+    font-size: 18px;
+}
+
+#contact-header {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#contact-header h2 {
+    width: 229px;
+    height: 51px;
+    border-radius: 7px;
+    background-color: #B9FF66;
+    font-size: 40px;
+    text-align: center;
+}
+
+#contact-header p {
+    width: 323px;
+    height: 46px;
+    font-size: 18px;
+}
+
+#contact-section {
+    width: 100%;
+    height: 773px;
+    background-color: #F3F3F3;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50;
+}
+
+#contact-section form {
+    width: 556px;
+    height: 633px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+form .inp {
+    width: 100%;
+    /* height: 92px; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inp input {
+    height: 59px;
+    border-radius: 14px;
+    border: 1px solid #191A23;
+    display: flex;
+    gap: 10px;
+}
+
+form .msg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.msg input {
+    width: 100%;
+    height: 190px;
+    border-radius: 14px;
+    border: 1px solid #191A23;
+}
+
+form button {
+    width: 100%;
+    height: 68px;
+    color: white;
+    border: 1px solid #191A23;
+    background-color: #191A23;
+    border-radius: 14px;
+}
+
+#contact-section .img {
+    /* margin-left: 310px; */
+    position: relative;
+    left: 102px;
+    width: 370px;
+    height: 648px;
+    background-image: url(Illustration\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        padding: 20px 0;
+    }
+
+    header .logo {
+        width: 140pcpx;
+        height: 23px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header .side-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 24px;
+        height: 19px;
+    }
+
+    section {
+        flex-wrap: wrap;
+    }
+
+    section .navigation{
+        /* width: 100%; */
+        height: auto;
+    }
+
+    .navigation h1{
+        width: 100%;
+        height: auto;
+        font-size: 43px;
+    }
+
+    .navigation p{
+        font-size: 16px;
+        width: 90%;
+    }
+
+    section .illustration{
+        margin-top: 20px;
+        width: 100%;
+        height: 270px;
+    }
+
+    footer{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    #services-header{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #services-section{
+        flex-wrap: wrap;
+    }
+    #services-section .box{
+        margin-top: 10px;
+        width: 90%;
+    }
+    .box .img{
+        display: none;
+    }
+
+    #working-header{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #working-section .box #label{
+        width: 65%;
+    }
+
+    #label .s-no{
+        width: 20%;
+        font-size: 45px;
+        height: auto;
+    }
+
+    #label .s-name{
+        width: 75%;
+        font-size: 21px;
+        display: flex;
+        align-items: center;
+    }
+
+    #contact-header{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #contact-section .img{
+        display: none;
+    }
+
+    #contact-section form{
+        align-items: center;
+    }
+
+    form .radio{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    form .inp {
+        width: 90%;
+    }
+
+    form .msg {
+        width: 90%;
+    }
+
+    form button {
+        width: 90%;
+    }
+}
