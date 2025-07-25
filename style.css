@@ -29,6 +29,7 @@ body {
 header {
     /* width: 140px;
     height: 68px; */
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -314,17 +315,22 @@ footer .company-logo-6 {
 #working-section .box-1 {
     margin: 50px 0;
     width: 100%;
-    height: 279px;
+    height: 159px;
     border-radius: 45px;
-    background-color: #B9FF66;
+    background-color: white;
     border: 1px solid #191A23;
     box-shadow: 0 5px 0 0 #191A23;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-
+    transition: .5s;
 }
+#working-section .box-1:hover{
+    height: 259px;
+    background-color: #B9FF66;
+}
+
 
 .box-1 .content {
     width: 90%;
@@ -340,6 +346,15 @@ footer .company-logo-6 {
     align-items: center;
     justify-content: space-between;
 }
+.content .svg-1{
+    display: none;
+}
+#working-section .box-1:hover .content .svg-1{
+    display: inline;
+}
+#working-section .box-1:hover .content .svg-2{
+    display: none;
+}
 
 #label .s-no {
     width: 75px;
@@ -354,51 +369,17 @@ footer .company-logo-6 {
     font-size: 30px;
     font-weight: 500;
 }
-
-.box-1 .line {
-    width: 90%;
-    border-bottom: 1px solid #191A23;
-}
-
 .box-1 .p {
     width: 90%;
-    /* height: 60px; */
+    display: none;
+    transition: 2s;
 }
-
-#working-section .box {
-    margin: 50px 0;
-    width: 100%;
-    height: 159px;
-    border-radius: 45px;
-    border: 1px solid #191A23;
-    box-shadow: 0 5px 0 0 #191A23;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+#working-section .box-1:hover .p{
+    border-top: 1px solid #191A23;
+    padding-top: 20px;
+    display: inline;
+    background-color: #B9FF66;
 }
-
-.box #label {
-    width: 712px;
-    height: 77px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#label .s-no {
-    width: 75px;
-    height: 77px;
-    font-size: 60px;
-    font-weight: 500;
-}
-
-#label .s-name {
-    width: 612px;
-    height: 38px;
-    font-size: 30px;
-    font-weight: 500;
-}
-
 .box-1 p {
     width: 1114px;
     height: 60px;
@@ -455,6 +436,7 @@ form .inp {
 }
 
 .inp input {
+    padding-left: 10px;
     height: 59px;
     border-radius: 14px;
     border: 1px solid #191A23;
@@ -469,8 +451,9 @@ form .msg {
     gap: 5px;
 }
 
-.msg input {
-    width: 100%;
+.msg textarea {
+    padding: 10px 0 0 10px ;
+    width: 97%;
     height: 190px;
     border-radius: 14px;
     border: 1px solid #191A23;
@@ -588,10 +571,6 @@ form button {
     font-size: 18px;
 }
 @media screen and (max-width: 375px) {
-    body {
-        padding: 20px 0;
-    }
-
     header .logo {
         width: 140px;
         height: 23px;
@@ -604,10 +583,43 @@ form button {
     header .side-btn {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
-        width: 24px;
-        height: 19px;
+        border-radius: 5px;
+        background-color: white;
+        width: 40px;
+        height: 25px;
+    }
+    header .side-btn:focus{
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        display: flex;
+        border: 1px solid gray;
+        width: 200px;
+        height: 300px;
+        transition: .2s;
+    }
+    .side-btn:focus svg{
+        opacity: 0;
+    }
+    header .side-btn ul{
+        display: none;
+    }
+    .side-btn:focus ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: space-between;
+        
+    }
+    .side-btn ul li{
+        width: 180px;
+        height: 50px;
+        border-top: 2px solid whitesmoke;
+        border-bottom: 2px solid whitesmoke;
+        display: flex;
+        align-items: center;
     }
 
     section {
@@ -751,8 +763,5 @@ form button {
         width: 100%;
         height: 216px;
         flex-wrap: wrap;
-    }
-    .subcription input{
-        /* width: 200px; */
     }
 }
